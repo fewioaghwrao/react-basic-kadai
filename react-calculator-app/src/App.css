@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ボタンのグリッドレイアウト設定 */
+.button-grid {
+  display: grid; /* グリッドレイアウト */
+  grid-template-columns: repeat(4, 60px); /* 列の定義: 4列、各列の幅60px */
+  gap: 8px; /* グリッド間の隙間 */
+}
+/* ボタン */
+button {
+  background-color: skyblue; /* 背景色 */
+  color: black; /* 文字色 */
+  border: none; /* 境界線なし */
+  padding: 0.5rem 1rem; /* 内側の余白 */
+  margin: 0 5px; /* 左右の余白 */
+  border-radius: 6px; /* 角を丸める */
+  cursor: pointer; /* ポインター */
+  transition: background-color 0.3s; /* 背景色の変化 */
+}
+.calculator-container{
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;      /* 縦（cross-axis）中央 */
+  justify-content: center;  /* 横（main-axis）中央*/
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.calculator-container>p{
+   margin: 0;
+  }
+
+/* ボタンにカーソルが重なったときのスタイル */
+button:hover {
+  background-color: skyblue; /* 背景色変更 */
+}
+
+/* ボタンが無効化されているときのスタイル */
+button:disabled {
+  opacity: 0.5; /* 透明度50% */
+  cursor: not-allowed; /* マウスポインタを「使用不可」に変更 */
+}
